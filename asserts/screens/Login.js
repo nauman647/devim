@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import { View, Text, TextInput,TouchableOpacity,KeyboardAvoidingView } from 'react-native';
+import { View, Text, TextInput,TouchableOpacity,KeyboardAvoidingView,ImageBackground } from 'react-native';
 import auth_style from'../stylesheet/auth_style';
+
+
 
 
 export default class Login extends Component {
@@ -14,6 +16,18 @@ export default class Login extends Component {
     return (
         
         <View style={auth_style.container}  >
+           <ImageBackground 
+          source={{uri: 'https://images.unsplash.com/photo-1517433367423-c7e5b0f35086?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8Zm9vZCUyMGJhY2tncm91bmR8ZW58MHx8MHx8&auto=format&fit=crop&w=900&q=60'}}
+          style={{ flex: 1,
+            width: null,
+            height: null,
+            }}
+        >
+       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+        
+       </View>
+
+
         <View >
         <Text  style={auth_style.title}> Login </Text>
         </View>
@@ -44,7 +58,7 @@ export default class Login extends Component {
         </KeyboardAvoidingView>
        
        
-      
+       </ImageBackground >
       </View>
     );
   }

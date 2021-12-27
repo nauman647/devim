@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text, TextInput,TouchableOpacity,KeyboardAvoidingView, } from 'react-native';
+import { View, Text, TextInput,TouchableOpacity,KeyboardAvoidingView,keyboardVerticalOffset,ImageBackground } from 'react-native';
 import auth_style from'../stylesheet/auth_style';
 
 
@@ -15,6 +15,13 @@ export default class Signup extends Component {
        
       
         <View style={auth_style.container1}  >
+          <ImageBackground 
+          source={{uri: 'https://images.unsplash.com/photo-1467189741806-ee3dc79755eb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDExfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=900&q=60'}}
+          style={{ flex: 1,
+            width: null,
+            height: null,
+            }}
+        >
         <View >
         <Text  style={auth_style.title_signup}>Sign Up   </Text>
         </View>
@@ -29,11 +36,7 @@ export default class Signup extends Component {
     
         
         </View>
-        <KeyboardAvoidingView 
-    ref={'keyboardView'}
-    style={{flex:1}}
-
->
+       < KeyboardAvoidingView behavior='position' keyboardVerticalOffset={keyboardVerticalOffset}>
 
         <View style ={auth_style.signupbtn}>
         <TouchableOpacity>
@@ -52,7 +55,7 @@ export default class Signup extends Component {
         </KeyboardAvoidingView>
        
        
-      
+        </ImageBackground>
       </View>
 
 

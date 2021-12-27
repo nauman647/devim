@@ -128,7 +128,7 @@ c1:
   signupbtn:{
     flexDirection:"column",
     position:"relative",
-    bottom:"70%",
+    bottom:"100%",
     height:40,
     width:200,
     backgroundColor:"black",
