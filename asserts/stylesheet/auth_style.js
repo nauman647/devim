@@ -8,6 +8,9 @@ c1:
     paddingTop: StatusBar.currentHeight,
     marginHorizontal: 5,
 },
+scrollView: {
+  marginHorizontal: 3,
+},
   container: {
     backgroundColor:'#E63946',
     flex: 1,
@@ -28,16 +31,16 @@ c1:
     color: 'white',
     fontSize:27,
     alignSelf:'center',
-    paddingTop:"30%",
+    
   },
   input:{
    
     width:"90%",
-    height:'19%',
+    height:'17%',
     backgroundColor:'white',
     borderRadius:9,
     marginBottom:9,
-    paddingHorizontal:15
+    
 
   },
   input_view:

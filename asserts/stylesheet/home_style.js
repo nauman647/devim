@@ -15,26 +15,21 @@ const home = StyleSheet.create({
   },
   input:
    {
-    width: '70%',
+    width: 270,
+    height:42,
+    paddingTop:'3%',
 
     left: '3%',
     backgroundColor: '#E84C4F14',
-    paddingTop: '2]3%',
+    
     marginTop: '10%',
 
-    paddingBottom: '3%',
+    paddingBottom: '4%',
     borderColor: 'blue',
     borderRadius: 17,
+   
   },
-  searchbtn: {
-    width: '15%',
-    height: '14%',
-
-    backgroundColor: '#E84C4F14',
-
-    borderRadius: 17,
-    flexDirection: 'row',
-  },
+  
   title: {
     color: '#3E4462',
     marginTop: '5%',
@@ -46,7 +41,7 @@ const home = StyleSheet.create({
     color: '#7E7E7E',
     left: '3%',
     paddingTop: '2%',
-    fontSize: 21,
+    fontSize: 20,
     paddingBottom: '5%',
   },
   title2: {
@@ -57,12 +52,12 @@ const home = StyleSheet.create({
     fontWeight: 'bold',
   },
   imageview: {
-    backgroundColor: 'red',
+   
     marginTop: '7%',
     width: '90%',
     height: '30%',
     left: '3%',
-    borderRadius: 12,
+    borderRadius:12,
   },
   desview: {
     backgroundColor: 'white',
@@ -74,7 +69,7 @@ const home = StyleSheet.create({
     paddingBottom: '10%',
   },
   product: {
-    paddingTop: '5%',
+    paddingTop: '2%',
     fontSize: 20,
     left: '5%',
   },
